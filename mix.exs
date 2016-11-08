@@ -18,6 +18,7 @@ defmodule PandaCount.Mixfile do
   defp deps do
     [
       {:gen_stage, "~> 0.4"},
+      {:credo, ">= 0.0.0", only: [:dev, :test]},
     ]
   end
 end
