@@ -11,11 +11,13 @@ defmodule PandaCount.Mixfile do
   end
 
   def application do
-    [applications: [:logger],
+    [applications: [:logger, :gen_stage],
      mod: {PandaCount, []}]
   end
 
   defp deps do
-    []
+    [
+      {:gen_stage, "~> 0.4"},
+    ]
   end
 end
